@@ -23,9 +23,9 @@ namespace DictionaryDemo
             IDictionary<int, string> ResponseCode = new Dictionary<int, string>();
             ResponseCode.Add(00, "Approved or completed successfully");
             ResponseCode.Add(01, "Status unknown");
-            ResponseCode.Add(07, "Account name mismatch");
-            ResponseCode.Add(98, "Transaction reversed");
-            ResponseCode.Add(01, "Status unkown, please wait for settlement report");
+            ResponseCode.Add(10, "Account name mismatch");
+            ResponseCode.Add(39, "Transaction reversed");
+            ResponseCode.Add(02, "Status unkown, please wait for settlement report");
             ResponseCode.Add(03, "Invalid Sender");
             ResponseCode.Add(05, "Do not honor");
             ResponseCode.Add(06, "Dormant Account");
@@ -71,7 +71,7 @@ namespace DictionaryDemo
             ResponseCode.Add(94, "Duplicate transaction");
             ResponseCode.Add(95, "Hash key not found");
             ResponseCode.Add(96, "System malfunction");
-            ResponseCode.Add(95, "Sender's hash key not found");
+            ResponseCode.Add(99, "Sender's hash key not found");
             ResponseCode.Add(97, "Timeout waiting for response from destination");
             ResponseCode.Add(98, "Transaction reversed");
 
